@@ -2,7 +2,7 @@ class RainDrops
 {
         constructor()
         {
-                var charstring="1234567890abcde%&#@"
+                var charstring="AbCdEfGhIjKlMnOpQrStUvWxYz@#$%"
                this. x= Math.round(random(0,1200));
                 this. y=Math.round(random(-500,-50));
                 this.yspeed= Math.round(random(0,20))

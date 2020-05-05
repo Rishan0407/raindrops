@@ -1,12 +1,12 @@
 const Engine= Matter.Engine;
 const World= Matter.World;
 const Bodies= Matter.Bodies
-var  raindrop=[]
+var  rains=[]
 
 var symbol
 
 function setup() {
-  createCanvas(1200,400);
+  createCanvas(1200,760);
   engine= Engine.create();
   world=engine.world;
  
@@ -22,22 +22,22 @@ for(i=0;i<500;i++)
 {
   
  
-  raindrop[i]=new RainDrops();
+  rains[i]=new RainDrops();
 }
 
   
 }
 
 function draw() {
-  background(255,255,255);  
+  background("yellow");  
 
   Engine.update(engine)
 
   
-  for(i=0;i<raindrop.length;i++)
+  for(i=0;i<rains.length;i++)
   {
-    raindrop[i].display();
-    raindrop[i].fall();
+    rains[i].display();
+    rains[i].fall();
   }
   
 
